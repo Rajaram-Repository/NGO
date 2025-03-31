@@ -1,0 +1,23 @@
+node_modules/
+pnpm-lock.yaml
+.next/
+out/
+coverage/
+
+
+
+# Node modules
+apps/**/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build output
+dist
+.next
+out
+
+# Environment variables
+.env
