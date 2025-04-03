@@ -1,9 +1,19 @@
 import express from 'express';
+import cors from 'cors';
 import { Request, Response } from 'express';
 import { getTabsByOrgId, createTab, editTab, deleteTab } from '../controllers/tabsController';
 
 const router = express.Router();
 
+// Example Express.js route (in backend)
+router.get("/data", (req: Request, res: Response) => {
+    const data = {
+      message: "This is the data from the backend",
+      timestamp: new Date().toISOString(),
+    };
+    res.json(data);
+  });
+  
 // Home route for localhost
 router.get('/', (req: Request, res: Response) => {
     console.log('11111111111111111111111111111111111111');
