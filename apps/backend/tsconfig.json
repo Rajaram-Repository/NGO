@@ -1,12 +1,14 @@
 {
     "compilerOptions": {
-        "outDir": "dist",
-        "rootDir": "src",
-        "moduleResolution": "node",
-        "esModuleInterop": true,
-        "types": ["node", "express"],
-        "strict": true
+      "target": "ES6",
+      "module": "commonjs",
+      "outDir": "./dist",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "strict": true
     },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "dist"]
-}
+    "include": [
+      "src/**/*.ts"
+    ]
+  }
+  
